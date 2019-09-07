@@ -24,27 +24,12 @@
 <span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token string">"<span class="token environment constant">$HOME</span>/.config/composer/vendor/bin:<span class="token environment constant">$PATH</span>"</span>
 <span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token string">"<span class="token environment constant">$HOME</span>/terminus/vendor/bin:<span class="token environment constant">$PATH</span>"</span>
 
-<span class="token comment"># logins</span>
-<span class="token builtin class-name">alias</span> <span class="token assign-left variable">deludenoid</span><span class="token operator">=</span><span class="token string">"ssh -p 2222 jwalker@deludenoid.com"</span>
-
 <span class="token comment"># Install Ruby gems without sudo in ~/gems</span>
 <span class="token builtin class-name">export</span> <span class="token assign-left variable">GEM_HOME</span><span class="token operator">=</span><span class="token environment constant">$HOME</span>/gems
 <span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token environment constant">$HOME</span>/gems/bin:<span class="token environment constant">$PATH</span>
 
 <span class="token comment"># Needed for autocomplete to work with Drupal Console</span>
 <span class="token builtin class-name">source</span> <span class="token string">"<span class="token environment constant">$HOME</span>/.console/console.rc"</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span>/dev/null
-
-<span class="token comment"># site installation</span>
-<span class="token function-name function">drupal8composerinstall</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> composer create-project drupal-composer/drupal-project:8.x-dev <span class="token variable">$@</span> --stability dev --no-interaction <span class="token punctuation">;</span> <span class="token punctuation">}</span>
-
-<span class="token comment"># echoes</span>
-<span class="token builtin class-name">alias</span> <span class="token assign-left variable">patcher</span><span class="token operator">=</span><span class="token string">"echo patch -p1 &lt; path/file.patch"</span>
-
-<span class="token comment"># utexas related</span>
-<span class="token builtin class-name">alias</span> dk8-si<span class="token operator">=</span><span class="token string">'drush si utexas -y install_configure_form.enable_update_status_module=NULL --account-mail="wcs-drupal-site-admins@utlists.utexas.edu" --site-mail="wcs-drupal-site-admins@utlists.utexas.edu" --site-name="Drupal Kit Rocks"'</span>
-<span class="token builtin class-name">alias</span> itatut-sync<span class="token operator">=</span><span class="token string">"drush sql-drop -y &amp;&amp; drush sql-drop -y &amp;&amp; drush sql-sync @pantheon.itatut.dev @itatut.local -y &amp;&amp; drush upwd admin --password=admin &amp;&amp; drush cc all -y &amp;&amp; drush fra -y &amp;&amp; drush vset preprocess_css 0 &amp;&amp; drush vset preprocess_js 0 &amp;&amp; drush vset cache 0 &amp;&amp; drush cc all &amp;&amp; drush updb -y"</span>
-<span class="token builtin class-name">alias</span> qs-si<span class="token operator">=</span><span class="token string">"drush site-install utexas account-name=admin --account-pass=admin --db-url=mysql://user:password@localhost/quicksites -y -v"</span>
-<span class="token builtin class-name">alias</span> <span class="token assign-left variable">si</span><span class="token operator">=</span><span class="token string">'drush si utexas -y install_configure_form.enable_update_status_module=NULL --account-mail="wcs-drupal-site-admins@utlists.utexas.edu" --site-mail="wcs-drupal-site-admins@utlists.utexas.edu" --site-name="Drupal Kit Rocks"'</span>
 
 <span class="token comment"># random functions</span>
 <span class="token function-name function">f</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token function">find</span> <span class="token builtin class-name">.</span> -name <span class="token string">'*'</span><span class="token string">"<span class="token variable">$@</span>"</span><span class="token string">'*'</span> <span class="token punctuation">;</span> <span class="token punctuation">}</span>
