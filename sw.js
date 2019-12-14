@@ -26,24 +26,36 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-eac9da10b966ab20deb6.js"
+    "url": "webpack-runtime-806fa52ae62c66bb46c9.js"
   },
   {
-    "url": "app-60afb6eed8036f3aea3d.js"
+    "url": "app-0f7f3ad5d974404d4547.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-f9b1f68a1d9d89ac5404.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "cd954e54b9caccc1ab632fdb68619dab"
+    "revision": "3b5fd049ebcaeb6c1cc8f47e43956023"
   },
   {
-    "url": "styles.981a24a7d8b4aa0fdf96.css"
+    "url": "styles.bcd4cd583b1b9da31bd2.css"
+  },
+  {
+    "url": "google-fonts/s/hind/v10/5aU69_a8oxmIdGl4BA.woff2",
+    "revision": "61e99a257f8899df3bab534a6aa0f9b2"
   },
   {
     "url": "google-fonts/s/raleway/v14/1Ptug8zYS_SKggPNyC0ITw.woff2",
     "revision": "43c849ea0258ce0d23a480e840881f16"
+  },
+  {
+    "url": "google-fonts/s/teko/v9/LYjCdG7kmE0gdRhYsCRgqA.woff2",
+    "revision": "8babbe3f35e26ed2ce41d2d13386d7a7"
+  },
+  {
+    "url": "google-fonts/s/teko/v9/LYjNdG7kmE0gfaN9pQ.woff2",
+    "revision": "acfe7febfccde670c6d1d5851cc86d1d"
   },
   {
     "url": "1-0e999acc7e770143bca7.js"
@@ -56,11 +68,11 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/404.html/page-data.json",
-    "revision": "97f92c42194901200fce4dee08032c77"
+    "revision": "9931b3ed0d98b26760869072c3ca6700"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "e7ebd14143625c4daa5d1f4af814524a"
+    "revision": "eb9fd6c2972a2f97453ea1ef3ad024fe"
   },
   {
     "url": "manifest.webmanifest",
